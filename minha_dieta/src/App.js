@@ -3,19 +3,88 @@ import './App.css';
 import React from 'react';
 import Home from './home/Home.js';
 
-const alimentos= [
-  {nome: 'Alcatra', quantidade: '100'},
-  {nome: 'Alface', quantidade: '100'},
-  {nome: 'Banana', quantidade: '100'},
-  {nome: 'Goiaba', quantidade: '100'},
+const categoria_dietas = [
+  {nome: 'MONTAR PRATO'},
+  {nome: 'CETOGÊNICA'},
+  {nome: 'DASH'},
+  {nome: 'DUKAN'},
+  {nome: 'GLUTEN FREE'},
+  {nome: 'LOW-CARB'},
+  {nome: 'MEDITERRÂNEA'},
+  {nome: 'PALEOLÍTICA'},
+  {nome: 'RAVENNA'},
+  {nome: 'SEM LACTOSE'},
+  {nome: 'VEGANA'}
 ]
 
-function App(props) 
+const categoria_alimentos = [
+  {nome: 'CARNES E OVOS'},
+  {nome: 'CEREAIS'},
+  {nome: 'FRUTAS'},
+  {nome: 'LEGUMES'},
+  {nome: 'LEGUMINOSAS'},
+  {nome: 'ÓLEOS E GORDURAS'},
+  {nome: 'PÃES'},
+  {nome: 'TUBÉRCULOS'},
+  {nome: 'VERDURAS'},
+  {nome: 'OUTROS'}
+]
+
+const categoria_bebidas = [
+  {nome: 'CHÁS'},
+  {nome: 'LATICÍNIOS'},
+  {nome: 'SUCOS'},
+  {nome: 'OUTROS'}
+]
+
+const dieta= [
+  {nome: 'Suco de Laranja', quantidade: 100, caloria: 300},
+  {nome: 'Alface', quantidade: 100, caloria: 200},
+  {nome: 'Banana', quantidade: 100, caloria: 500},
+  {nome: 'Alcatra', quantidade: 100, caloria: 700},
+  {nome: 'Queijo', quantidade: 100, caloria: 400},
+]
+
+const alimentos= [
+  {nome: 'Alcatra', quantidade: 100, caloria: 300},
+  {nome: 'Alface', quantidade: 100, caloria: 200},
+  {nome: 'Banana', quantidade: 100, caloria: 500},
+  {nome: 'Goiaba', quantidade: 100, caloria: 700},
+  {nome: 'Queijo', quantidade: 100, caloria: 400},
+]
+
+const bebidas= [
+  {nome: 'Guaraná', quantidade: 100, caloria: 300},
+  {nome: 'Chá de hibisco', quantidade: 100, caloria: 200},
+  {nome: 'Café', quantidade: 100, caloria: 500},
+  {nome: 'Suco de Uva', quantidade: 100, caloria: 700},
+  {nome: 'Suco de Laranja', quantidade: 100, caloria: 400},
+]
+
+function App (props) 
 {
   return (<>
-    <h1>{props.texto}</h1>
-    <br />
-    <Home alimentos= {alimentos} />
+    <div class="container" >
+            <div class="row">
+                
+                <div class="col">
+                    <span id="fonte1">Dieta</span>
+                    <div class="input-group"><input  type="text" id="txtBusca" placeholder="Buscar Dieta..."/></div>
+                    <Home alimentos= {alimentos} />
+                </div>
+                <div class="col">
+                    <span id="fonte1">Alimentos</span>
+                    <div class="input-group"><input type="text" id="txtBusca" placeholder="Buscar Alimento..."/></div>
+                    <Home alimentos= {alimentos} />
+                </div>
+                <div class="col">
+                    <span id="fonte1">Bebidas</span>
+                    <div class="input-group"><input  type="text" id="txtBusca" placeholder="Buscar Bebida..."/></div>
+                    <Home alimentos= {bebidas} />
+                </div>
+            </div>
+    </div>       
+    
   </>);
 }
 

@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 const Tabela = (props) => {
     return (
         <tr>
@@ -9,17 +11,22 @@ const Tabela = (props) => {
             <td>
                 {props.alimento.quantidade}
             </td>
+            <td>
+                {props.alimento.caloria}
+            </td>
         </tr>
     )
 }
 
-export default function home(props) 
+export default function home (props) 
 {
     return (
-        <table id="alimentos" border= "1">
+        <table id="minhaTabela" >
+            <thead><tr id="title"><th>COMPONENTE</th><th>QTD</th><th>Kcal</th></tr></thead>
             <tbody>
                 {props.alimentos.map((alimento) => <Tabela key= {alimento.nome} alimento= {alimento} /> )}
             </tbody>
+            <tfoot><tr> <td> </td><td></td><td></td></tr></tfoot>
         </table>
     )
 }

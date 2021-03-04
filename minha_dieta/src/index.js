@@ -6,7 +6,8 @@ import App from './App';
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <App texto= "Minha Dieta" />, document.getElementById('root')
+  <App  />, document.getElementById('root')
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
