@@ -70,7 +70,7 @@ function App (props)
                 <div class="col">
                     <span id="fonte1">Dieta</span>
                     <div class="input-group"><input  type="text" id="txtBusca" placeholder="Buscar Dieta..."/></div>
-                    <Home alimentos= {alimentos} />
+                    <Home alimentos= {dieta} />
                 </div>
                 <div class="col">
                     <span id="fonte1">Alimentos</span>
