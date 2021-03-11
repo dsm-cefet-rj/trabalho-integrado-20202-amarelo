@@ -1,7 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Home from './home/Home.js';
+import NavBar from '../src/components/NavBar';
+import Carrousel from './components/Carrousel';
+import NavBarSearchBox from './components/NavBarSearchBox';
+
 
 const categoria_dietas = [
   {nome: 'MONTAR PRATO'},
@@ -43,6 +46,7 @@ const dieta= [
   {nome: 'Banana', quantidade: 100, caloria: 500},
   {nome: 'Alcatra', quantidade: 100, caloria: 700},
   {nome: 'Queijo', quantidade: 100, caloria: 400},
+  
 ]
 
 const alimentos= [
@@ -64,6 +68,9 @@ const bebidas= [
 function App (props) 
 {
   return (<>
+    <NavBar></NavBar>
+    <NavBarSearchBox></NavBarSearchBox>
+    <Carrousel></Carrousel>
     <div class="container" >
             <div class="row">
                 

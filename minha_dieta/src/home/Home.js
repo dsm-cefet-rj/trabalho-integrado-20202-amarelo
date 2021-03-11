@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-
 const Tabela = (props) => {
     return (
         <tr>
             <td>
+                <a href="" ><img id="imgplus1" src="./menos1.png"></img></a>
                 {props.alimento.nome}
             </td>
             <td>
@@ -26,7 +26,7 @@ export default function home (props)
             <tbody>
                 {props.alimentos.map((alimento) => <Tabela key= {alimento.nome} alimento= {alimento} /> )}
             </tbody>
-            <tfoot><tr> <td> </td><td></td><td></td></tr></tfoot>
+            <tfoot><tr> <th> </th><th></th><th></th></tr></tfoot>
         </table>
     )
 }
