@@ -4,6 +4,10 @@ import Table from "./components/Table";
 import NavBar from "../src/components/NavBar";
 import Carrousel from "./components/Carrousel";
 import NavBarSearchBox from "./components/NavBarSearchBox";
+import AddButton from './components/Button';
+import InputBox from './components/InputBox';
+import img5 from "./images/buttons/menos1.png";
+import img6 from "./images/buttons/mais1.png";
 
 const categoria_dietas = [
   { nome: "MONTAR PRATO" },
@@ -63,6 +67,10 @@ const bebidas = [
   { nome: "Refrigerante", quantidade: 100, caloria: 400 },
 ];
 
+const prato = [
+
+]
+
 function App(props) {
   // const [prato, setPrato] = useState([]);
 
@@ -71,42 +79,25 @@ function App(props) {
       <NavBar></NavBar>
       <NavBarSearchBox></NavBarSearchBox>
       <Carrousel></Carrousel>
+      <br/>
       <div class="container">
         <div class="row">
-          <div>
-            {" "}
-            <br />
-            <b>
-              Seja bem-vindo! Para começar escolha uma dieta ou selecione
-              alimentos/bebida:
-            </b>
-          </div>
+        <div class="container"><p class="textobv"> Seja bem-vindo! Para começar escolha uma dieta ou selecione alimentos/bebida: </p> </div>
           <div class="col">
-            {" "}
             <br />
-            <span id="fonte1">Dieta</span>
-            <div class="input-group">
-              <input type="text" id="txtBusca" placeholder="Buscar Dieta..." />
-            </div>
-            <Table alimentos={dieta} />
+            <span id="fonte1">Dieta  <AddButton nome='Salvar' ></AddButton></span>
+            <InputBox nome='Buscar Dieta...'></InputBox>
+            <Table alimentos={dieta} url={img5} col1="COMPONENTE" rod1="TOTAL" rod2="600" rod3="1200" />
           </div>
           <div class="col"> <br />
-            <span id="fonte1">Alimentos</span>
-            <div class="input-group">
-              <input
-                type="text"
-                id="txtBusca"
-                placeholder="Buscar Alimento..."
-              />
-            </div>
-            <Table alimentos={alimentos} />
+            <span id="fonte1">Alimentos  <AddButton nome='Cadastrar'></AddButton></span>
+            <InputBox nome='Buscar Alimento...'></InputBox>
+            <Table alimentos={alimentos} url={img6} col1="ALIMENTO"/>
           </div>
           <div class="col"> <br />
-            <span id="fonte1">Bebidas</span>
-            <div class="input-group">
-              <input type="text" id="txtBusca" placeholder="Buscar bebida..." />
-            </div>
-            <Table alimentos={bebidas} />
+            <span id="fonte1">Bebidas  <AddButton nome='Cadastrar'></AddButton></span>
+            <InputBox nome='Buscar Bebida...'></InputBox>
+            <Table alimentos={bebidas} url={img6} col1="BEBIDA"/>
           </div>
         </div>
       </div>

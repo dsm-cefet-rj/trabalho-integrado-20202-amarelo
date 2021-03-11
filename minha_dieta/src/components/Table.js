@@ -1,8 +1,9 @@
 import React from "react";
-import img5 from "../../src/images/buttons/menos1.jpg";
+import img5 from "../../src/images/buttons/menos1.png";
+import img6 from "../../src/images/buttons/mais1.png";
 import "./Table.css";
 
-function adicionar()
+function adicionar(props)
 {
     alert("Deseja adicionar este item a sua dieta?");
     /* const itensCopy = Array.from(prato);
@@ -14,9 +15,9 @@ const Tabela = (props) => {
   return (
     <tr>
       <td>
-        <button id="botaoAdd" onClick= {() => adicionar()}>
-          <img id="imgplus1" src={img5}></img>
-        </button>
+        <a onClick= {() => adicionar()}>
+          <img id="imgplus1" src={props.url}></img>
+        </a>
         {props.alimento.nome}
       </td>
       <td>{props.alimento.quantidade}</td>
@@ -30,22 +31,21 @@ export default function Tables(props) {
     <table id="minhaTabela">
       <thead>
         <tr id="title">
-          <th>COMPONENTE</th>
+          <th>{props.col1}</th>
           <th>QTD</th>
           <th>Kcal</th>
         </tr>
       </thead>
       <tbody>
         {props.alimentos.map((alimento) => (
-          <Tabela key={alimento.nome} alimento={alimento} />
+          <Tabela url={props.url} key={alimento.nome} alimento={alimento} />
         ))}
       </tbody>
       <tfoot>
         <tr>
-          {" "}
-          <th> </th>
-          <th></th>
-          <th></th>
+          <th>{props.rod1}</th>
+          <th>{props.rod2}</th>
+          <th>{props.rod3}</th>
         </tr>
       </tfoot>
     </table>
