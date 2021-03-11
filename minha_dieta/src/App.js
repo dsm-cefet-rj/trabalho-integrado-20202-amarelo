@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import Home from './home/Home.js';
+import Table from './components/Table';
 import NavBar from '../src/components/NavBar';
 import Carrousel from './components/Carrousel';
 import NavBarSearchBox from './components/NavBarSearchBox';
@@ -77,17 +77,17 @@ function App (props)
                 <div class="col">
                     <span id="fonte1">Dieta</span>
                     <div class="input-group"><input  type="text" id="txtBusca" placeholder="Buscar Dieta..."/></div>
-                    <Home alimentos= {dieta} />
+                    <Table alimentos= {dieta} />
                 </div>
                 <div class="col">
                     <span id="fonte1">Alimentos</span>
                     <div class="input-group"><input type="text" id="txtBusca" placeholder="Buscar Alimento..."/></div>
-                    <Home alimentos= {alimentos} />
+                    <Table alimentos= {alimentos} />
                 </div>
                 <div class="col">
                     <span id="fonte1">Bebidas</span>
                     <div class="input-group"><input  type="text" id="txtBusca" placeholder="Buscar Bebida..."/></div>
-                    <Home alimentos= {bebidas} />
+                    <Table alimentos= {bebidas} />
                 </div>
             </div>
     </div>       
