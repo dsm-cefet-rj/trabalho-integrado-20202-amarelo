@@ -90,7 +90,7 @@ function App(props) {
             </div>
             <Table alimentos={dieta} />
           </div>
-          <div class="col">
+          <div class="col"> <br />
             <span id="fonte1">Alimentos</span>
             <div class="input-group">
               <input
@@ -101,7 +101,7 @@ function App(props) {
             </div>
             <Table alimentos={alimentos} />
           </div>
-          <div class="col">
+          <div class="col"> <br />
             <span id="fonte1">Bebidas</span>
             <div class="input-group">
               <input type="text" id="txtBusca" placeholder="Buscar bebida..." />
