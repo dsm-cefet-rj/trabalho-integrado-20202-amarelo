@@ -1,10 +1,11 @@
 import logo3 from '../images/logo3.png';
 
 
+
 export default function NavBar(){
     return(
         <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <a class="navbar-brand" href="index.html"><img src={logo3}  width="128" height="50" ></img></a>
+        <a class="navbar-brand" href="/index"><img src={logo3}  width="128" height="50" ></img></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,10 +16,10 @@ export default function NavBar(){
                 Menu
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Entrar</a>
-                <a class="dropdown-item" href="#">Sair</a>
+                <a class="dropdown-item" href="/login">Entrar</a>
+                <a class="dropdown-item" href='/meus-pratos'>Meus pratos</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Sobre</a>
+                <a class="dropdown-item" href="">Sair</a>
               </div>
             </li>
            </ul>

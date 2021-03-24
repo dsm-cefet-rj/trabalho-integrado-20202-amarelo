@@ -6,7 +6,8 @@ function Logado(){
 export default function AddButton(props){
     return(
         
-        <button className="btn btn-outline-success btn-sm" type="submit" onClick= {() => Logado()}>{props.nome}</button>
+        <button className="btn btn-outline-success btn-sm" type={props.type} 
+         data-toggle={props.toggle} data-target={props.target} >{props.nome}</button>
         
     )
 }
