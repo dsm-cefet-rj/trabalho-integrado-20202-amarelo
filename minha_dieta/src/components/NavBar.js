@@ -4,22 +4,23 @@ import logo3 from '../images/logo3.png';
 
 export default function NavBar(){
     return(
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <a class="navbar-brand" href="/index"><img src={logo3}  width="128" height="50" ></img></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-light bg-warning">
+        <a className="navbar-brand" href="/index"><img src={logo3}  width="128" height="50" ></img></a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span className="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav mr-auto"><li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div className="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
+          <ul className="navbar-nav mr-auto"><li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Menu
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/login">Entrar</a>
-                <a class="dropdown-item" href='/meus-pratos'>Meus pratos</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="">Sair</a>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a className="dropdown-item" href="/login">Entrar</a>
+                <a className="dropdown-item" href='/index'>Home</a>
+                <a className="dropdown-item" href='/meus-pratos'>Meus pratos</a>
+                <div className="dropdown-divider"></div>
+                <a className="dropdown-item" href="">Sair</a>
               </div>
             </li>
            </ul>

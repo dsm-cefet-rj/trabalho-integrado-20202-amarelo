@@ -9,12 +9,8 @@ store.dispatch(fetchPratos());
 
 export default function App() {
   return (
-  
       <Provider store={store}>
           <Rotas/>
       </Provider>
-   
   );
 }
-
-

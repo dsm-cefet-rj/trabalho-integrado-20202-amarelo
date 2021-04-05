@@ -3,7 +3,7 @@
 
 .card-container.card {
     width: 350px;
-    padding: 40px 40px;
+    padding: 148px 20px;
 }
 
 .btn {
@@ -22,8 +22,7 @@
     background-color: #faf604;
     /* just in case there no content*/
     padding: 20px 25px 30px;
-    margin: 0 auto 25px;
-    margin-top: 50px;
+    margin: 0px 0px 0px;
     /* shadows and rounded borders */
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -34,24 +33,22 @@
 }
 
 .profile-img-card {
-    width: 180px;
-    height: 120px;
-    margin: 0 auto 10px;
+    width: 100%;
+    height: 100%;
+    margin: -99px 0px 41px 0px;
     display: block;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
 }
 
 /*
  * Form styles
  */
 .profile-name-card {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     margin: 10px 0 0;
     min-height: 1em;
+    margin-bottom: 52px;
 }
 
 .reauth-email {
@@ -64,9 +61,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    /**-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;**/
+    padding: 0px 10px 0px 0px;
 }
 
 .form-signin #inputEmail,
