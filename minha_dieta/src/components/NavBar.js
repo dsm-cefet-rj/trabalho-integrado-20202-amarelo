@@ -16,8 +16,8 @@ export default function NavBar(){
                 Menu
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="/login">Entrar</a>
                 <a className="dropdown-item" href='/index'>Home</a>
+                <a className="dropdown-item" href="/login">Entrar</a>
                 <a className="dropdown-item" href='/meus-pratos'>Meus pratos</a>
                 <div className="dropdown-divider"></div>
                 <a className="dropdown-item" href="">Sair</a>

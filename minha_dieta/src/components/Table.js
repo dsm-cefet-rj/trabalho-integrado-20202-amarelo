@@ -3,7 +3,7 @@ import img5 from "../../src/images/buttons/menos1.png";
 import img6 from "../../src/images/buttons/mais1.png";
 import "./Table.css";
 
-function adicionar(props)
+function adicionar()
 {
     alert("Deseja adicionar este item a sua dieta?");
     /* const itensCopy = Array.from(prato);
@@ -11,7 +11,7 @@ function adicionar(props)
     setPrato(itensCopy); */
 }
 
-const Tabela = (props) => {
+const LinhasTabela = (props) => {
   return (
     <tr>
       <td>
@@ -24,7 +24,7 @@ const Tabela = (props) => {
       <td>{props.alimento.caloria}</td>
     </tr>
   );
-};
+}
 
 export default function Tables(props) {
   return (
@@ -38,7 +38,7 @@ export default function Tables(props) {
       </thead>
       <tbody>
         {props.alimentos.map((alimento) => (
-          <Tabela url={props.url} key={alimento.nome} alimento={alimento} />
+          <LinhasTabela url={props.url} key={alimento.nome} alimento={alimento} />
         ))}
       </tbody>
       <tfoot>

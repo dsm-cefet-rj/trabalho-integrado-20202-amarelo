@@ -68,6 +68,7 @@ p.textobv {
   -webkit-border-radius: 25px;
      -moz-border-radius: 25px;
           border-radius: 25px;
+  
           
 }
 
@@ -87,11 +88,13 @@ p.textobv {
 }
 
 tbody {
-  
-  overflow-y: auto;
-  height: 200px;
- 
+  display:block;
+  height:250px;
+  overflow:auto;
+  width: 160%;
 }
+
+
 
 #div1{
   display: flex;
@@ -113,6 +116,7 @@ th{
   padding: 10px;
   text-align: center;
   cursor: grab;
+  
 }
 td {
   padding: 10px;
@@ -120,6 +124,7 @@ td {
   border-bottom: 1px solid #ccc;
   word-wrap: break-word;
   cursor:grab;
+  width: 1000px;
 }
 
 #imgplus{

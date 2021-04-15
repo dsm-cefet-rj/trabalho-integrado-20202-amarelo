@@ -8,21 +8,11 @@ import InputBox from "../InputBox";
 import img5 from "../../images/buttons/menos1.png";
 import img6 from "../../images/buttons/mais1.png";
 import Modal from "../Modal";
+import Modal2 from "../Modal2";
 
 
-const categoria_dietas = [
-  { nome: "MONTAR PRATO" },
-  { nome: "CETOGÊNICA" },
-  { nome: "DASH" },
-  { nome: "DUKAN" },
-  { nome: "GLUTEN FREE" },
-  { nome: "LOW-CARB" },
-  { nome: "MEDITERRÂNEA" },
-  { nome: "PALEOLÍTICA" },
-  { nome: "RAVENNA" },
-  { nome: "SEM LACTOSE" },
-  { nome: "VEGANA" },
-];
+
+
 
 const categoria_alimentos = [
   { nome: "CARNES E OVOS" },
@@ -44,17 +34,16 @@ const categoria_bebidas = [
   { nome: "OUTROS" },
 ];
 
-const dieta = [
-  { nome: "Refrigerante", quantidade: 100, caloria: 300 },
-  { nome: "Alface", quantidade: 100, caloria: 200 },
-  { nome: "Banana", quantidade: 100, caloria: 500 },
-  { nome: "Alcatra", quantidade: 100, caloria: 700 },
-  { nome: "Queijo", quantidade: 100, caloria: 400 },
-];
+const prato = [];
+
+
 
 const alimentos = [
   { nome: "Alcatra", quantidade: 100, caloria: 300 },
   { nome: "Alface", quantidade: 100, caloria: 200 },
+  { nome: "Banana", quantidade: 100, caloria: 500 },
+  { nome: "Goiaba", quantidade: 100, caloria: 700 },
+  { nome: "Queijo", quantidade: 100, caloria: 400 },
   { nome: "Banana", quantidade: 100, caloria: 500 },
   { nome: "Goiaba", quantidade: 100, caloria: 700 },
   { nome: "Queijo", quantidade: 100, caloria: 400 },
@@ -68,6 +57,39 @@ const bebidas = [
   { nome: "Refrigerante", quantidade: 100, caloria: 400 },
 ];
 
+function verificarLogin()
+{
+
+}
+
+function salvarRefeicao()
+{
+    verificarLogin();
+    //verificar se o nome do prato já existe
+}
+
+function removerElementoPrato()
+{
+    alert("Deseja remover este item do prato?");
+    
+}
+
+function adicionarElementoPrato()
+{
+  //verificar se o alimento ou bebida já está no prato
+
+  //verificar o número de elementos máximo (7)
+
+
+    alert("Deseja adicionar este item do prato?");
+  
+}
+
+function somarPropriedadesPrato()
+{
+  //somar e atualizar a quantidade e calorias do prato
+}
+
 export default function ElementsPage(){
     return(
         <>
@@ -80,23 +102,25 @@ export default function ElementsPage(){
           <div class="container">
             <p class="textobv">
               {" "}
-              Seja bem-vindo! Para começar escolha uma dieta ou selecione
+              Seja bem-vindo! Para começar selecione
               alimentos/bebida:{" "}
             </p>{" "}
           </div>
           <div class="col">
             <br />
             <span id="fonte1">
-              Dieta <AddButton nome="Salvar" type="submit"></AddButton>
+              Refeição <AddButton nome="Salvar" type="button" toggle="modal" target="#ExemploModalCentralizado0"></AddButton>
             </span>
-            <InputBox nome="Buscar Dieta..."></InputBox>
+            <Modal2 id="ExemploModalCentralizado0"  ></Modal2>
+            <InputBox nome="Buscar Prato..."></InputBox>
             <Table
-              alimentos={dieta}
+              
+              alimentos={prato}
               url={img5}
               col1="COMPONENTE"
               rod1="TOTAL"
-              rod2="600"
-              rod3="1200"
+              rod2="600" //atualizar total
+              rod3="1200" //atualizar total refeicao
             />
           </div>
           <div class="col">

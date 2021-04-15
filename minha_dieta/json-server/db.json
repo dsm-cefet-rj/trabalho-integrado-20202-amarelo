@@ -1,0 +1,96 @@
+{
+    "alimento": [
+        {
+            "id": "1",
+            "nome": "Alcatra",
+            "caloria": 150
+        },
+        {
+            "id": "2",
+            "nome": "Alface",
+            "caloria": 50
+        },
+        {
+            "id": "3",
+            "nome": "Arroz",
+            "caloria": 80
+        },
+        {
+            "id": "4",
+            "nome": "Aveia",
+            "caloria": 20
+        },
+        {
+            "id": "5",
+            "nome": "Feijão",
+            "caloria": 100
+        },
+        {
+            "id": "6",
+            "nome": "Maçã",
+            "caloria": 15
+        },
+        {
+            "id": "7",
+            "nome": "Couve",
+            "caloria": 20
+        },
+        {
+            "id": "8",
+            "nome": "Tomate",
+            "caloria": 23
+        },
+        {
+            "id": "9",
+            "nome": "Bolo",
+            "caloria": 200
+        },
+        {
+            "id": "10",
+            "nome": "Chocolate",
+            "caloria": 120
+        }
+    ],
+    "bebida": [
+        {
+            "id": "1",
+            "nome": "Coca Diet",
+            "caloria": 0
+        },
+        {
+            "id": "2",
+            "nome": "Suco de Laranja",
+            "caloria": 110
+        },
+        {
+            "id": "3",
+            "nome": "Leite",
+            "caloria": 90
+        },
+        {
+            "id": "4",
+            "nome": "Chá de boldo",
+            "caloria": 5
+        },
+        {
+            "id": "5",
+            "nome": "Iogurte",
+            "caloria": 110
+        },
+        {
+            "id": "6",
+            "nome": "Guaraná",
+            "caloria": 96
+        },
+        {
+            "id": "7",
+            "nome": "Água",
+            "caloria": 0
+        },
+        {
+            "id": "8",
+            "nome": "Café",
+            "caloria": 10
+        }
+    ]
+}
